@@ -410,7 +410,7 @@ footer .information .main-button{
     background-color: var(--color--primary-3);
 }
 .footer-contact .contact-title{
-    color:white;
+    color:var(--color--white);
     font-size:50px;
 }
 .footer-contact input{
@@ -419,7 +419,7 @@ footer .information .main-button{
     border-radius: var(--border-radius--border-radius);
 }
 .footer-contact .footer-contact-link{
-    color:white;    
+    color:var(--color--white);    
     display: block;
     padding-top: 20px;
 }
@@ -435,4 +435,21 @@ footer .information .main-button{
     background-color: var(--color--primary-3);
     padding: 5px;
     border-radius: 50%;
+}
+.footer-links{
+    color:var(--color--white);
+}
+.footer-links-title{
+    color:var(--color--white);
+}
+.footer-links-wrapper{
+    flex-basis: 20%;
+    text-align: center;
+}
+.footer-link{
+    padding: 10px 0px;
+    transition: all 0.3s ease;
+}
+.footer-link:hover{
+    color:#f3b258;
 }

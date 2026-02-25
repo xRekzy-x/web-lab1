@@ -40,3 +40,10 @@ fetch("nav/nav.html")
         count.textContent=hiddenCount;
     }
   })
+
+//   FOOTER
+fetch("footer/footer.html")
+  .then(res => res.text())
+  .then(html => {
+    document.querySelector("footer").innerHTML = html;
+  });
