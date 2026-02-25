@@ -42,7 +42,7 @@
     .blog .blog-card{
         flex-basis: 100%;
     }
-    .footer{
+    footer{
         flex-wrap: wrap;
     }
 }
