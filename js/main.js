@@ -1,4 +1,4 @@
-fetch("/ex3/nav/nav.html")
+fetch("nav/nav.html")
   .then(res => res.text())
   .then(html => {
     document.querySelector("nav").innerHTML = html;
