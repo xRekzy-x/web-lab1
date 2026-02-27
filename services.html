@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -165,9 +166,8 @@
     </section>
 </div>
     <form class="order">
-        <h3>Thông tin khách hàng</h3>
+        <h3>Order</h3>
 
-        <!-- TEXT -->
         <label>
             Name:
             <input type="text" name="name" placeholder="Enter your name">
@@ -211,12 +211,12 @@
 
         <!-- RADIO -->
         <p>Payment:</p>
-        <label class="option"><input type="radio" name="payment" value="cash">Cash</label>
-        <label class="option"><input type="radio" name="payment" value="card">Card</label><br><br>
+        <label class="option"><input type="radio" name="payment" value="cash"> Cash</label>
+        <label class="option"><input type="radio" name="payment" value="card"> Card</label><br><br>
 
         <label class="order-item">
-            <input class="checkbox" type="checkbox" data-name="pizza" data-price="20">
-            <span class="order-name">pizza</span>
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Espresso</span>
 
             <div class="qty">
                 <button type="button" class="minus">-</button>
@@ -226,8 +226,8 @@
         </label>
 
         <label class="order-item">
-            <input class="checkbox" type="checkbox" data-name="coffee" data-price="50">
-            <span class="order-name">coffee</span>
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Americano</span>
 
             <div class="qty">
                 <button type="button" class="minus">-</button>
@@ -237,8 +237,8 @@
         </label>
 
         <label class="order-item">
-            <input class="checkbox" type="checkbox" data-name="coffee" data-price="50">
-            <span class="order-name">coffee</span>
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Matcha latte</span>
 
             <div class="qty">
                 <button type="button" class="minus">-</button>
@@ -248,8 +248,8 @@
         </label>
 
         <label class="order-item">
-            <input class="checkbox" type="checkbox" data-name="coffee" data-price="50">
-            <span class="order-name">coffee</span>
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Latte</span>
 
             <div class="qty">
                 <button type="button" class="minus">-</button>
@@ -257,7 +257,84 @@
                 <button type="button" class="plus">+</button>
             </div>
         </label>
-        <button type="submit">Đặt món</button>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Cashew chicken</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Shrimp curry</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Crispy calamari rings</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Arancini balls</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Vegetable spring rollse</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Chicken satay skewers</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+
+        <label class="order-item">
+            <input class="checkbox" type="checkbox">
+            <span class="order-name">Barbecue glazed ribs</span>
+
+            <div class="qty">
+                <button type="button" class="minus">-</button>
+                <span class="count">0</span>
+                <button type="button" class="plus">+</button>
+            </div>
+        </label>
+        <button class="main-button"type="submit">Đặt món</button>
     </form>
     <footer></footer>
     <script src="js/main.js"></script>

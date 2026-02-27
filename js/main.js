@@ -11,6 +11,28 @@ fetch("nav/nav.html")
         navUL.classList.toggle("active");
       });
     }
+    // DARK MODE
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const htmlTag = document.documentElement; //html tag
+
+    themeToggleButton.addEventListener('click', () => {
+    const currentTheme = htmlTag.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+      htmlTag.setAttribute('data-theme', 'light');
+      themeToggleButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      localStorage.setItem('theme', 'light');
+    } 
+    else {
+      htmlTag.setAttribute('data-theme', 'dark');
+      themeToggleButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      localStorage.setItem('theme', 'dark');
+    }
+});
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    htmlTag.setAttribute('data-theme', savedTheme);
+}
   });
 
   //do fetch ko chờ xong mới làm execute mấy dòng code sau nên để eventlistener bên trong then
@@ -36,7 +58,8 @@ fetch("nav/nav.html")
     }
     checkbox.onclick =e =>{
         e.stopPropagation();
-        hiddenCount=0;
+        if(checkbox.checked) hiddenCount=1;
+        else hiddenCount=0;
         count.textContent=hiddenCount;
     }
   })
@@ -47,3 +70,4 @@ fetch("footer/footer.html")
   .then(html => {
     document.querySelector("footer").innerHTML = html;
   });
+

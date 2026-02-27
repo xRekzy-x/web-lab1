@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    #theme-toggle{
+        margin-top: 13px;
+    }
     .nav-button{
         display: block;
         padding: 20px 20px;
@@ -23,18 +26,6 @@
     }
     .activity .card{
         flex: 0 0 100%;
-    }
-    .menu .flex-wrapper{
-        flex-wrap: wrap; 
-        flex-basis: 100%;
-    }
-    .menu .flex-wrapper .big-pic,
-    .menu .flex-wrapper ul{
-        flex-basis:100%;
-    } 
-    .menu .flex-wrapper li{
-        padding-top:20px;
-        margin-left:-20px;
     }
     .page-wrapper{
         padding: 20px 30px;
@@ -64,7 +55,10 @@
             "subject"
             "message";
     }
-    .contact > *{
+    .contact > *,
+    .journey-wrapper > *,
+    .stand-for-wrapper >*,
+    .employee{
         flex-basis: 100%;
     }
 
@@ -94,6 +88,18 @@
             "pic-a pic-b"
             "pic-c pic-d"
             "pic-c pic-d";
+    }
+    .menu .flex-wrapper{
+        flex-wrap: wrap; 
+        flex-basis: 100%;
+    }
+    .menu .flex-wrapper .big-pic,
+    .menu .flex-wrapper ul{
+        flex-basis:100%;
+    } 
+    .menu .flex-wrapper li{
+        padding-top:20px;
+        margin-left:-20px;
     }
 
 }
