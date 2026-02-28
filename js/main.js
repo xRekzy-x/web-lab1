@@ -115,60 +115,60 @@ document.addEventListener("DOMContentLoaded", function () {
   submitButton.addEventListener("click", function (e) {
       e.preventDefault(); // chặn submit mặc định
 
-      // const nameValue = nameInput.value.trim();
-      // const emailValue = emailInput.value.trim();
-      // const phoneValue = phoneInput.value.trim();
-      // const noOfGuestsValue = noOfGuestsInput.value.trim();
-      // const dateValue = dateInput.value;
+      const nameValue = nameInput.value.trim();
+      const emailValue = emailInput.value.trim();
+      const phoneValue = phoneInput.value.trim();
+      const noOfGuestsValue = noOfGuestsInput.value.trim();
+      const dateValue = dateInput.value;
 
-      // if (nameValue === "") {
-      //     alert("Please enter your name");
-      //     return;
-      // }
-      // if (emailValue === "") {
-      //     alert("Please enter your email");
-      //     return;
-      // }
-      // if (phoneValue === "") {
-      //     alert("Please enter your phone");
-      //     return;
-      // }
-      // if (noOfGuestsValue === "") {
-      //     alert("Please choose how many people!");
-      //     return;
-      // }
-      // if (dateValue === "") {
-      //     alert("Please enter your date");
-      //     return;
-      // }
+      if (nameValue === "") {
+          alert("Please enter your name");
+          return;
+      }
+      if (emailValue === "") {
+          alert("Please enter your email");
+          return;
+      }
+      if (phoneValue === "") {
+          alert("Please enter your phone");
+          return;
+      }
+      if (noOfGuestsValue === "") {
+          alert("Please choose how many people!");
+          return;
+      }
+      if (dateValue === "") {
+          alert("Please enter your date");
+          return;
+      }
 
-      // let checked = false;
-      // for(i=0;i<paymentInput.length;i++){
-      //   if(paymentInput[i].checked){
-      //     checked=true;
-      //     break;
-      //   }
-      // }
-      // if(!checked){
-      //     alert("Please select your payment method");
-      //     return;
-      // }
+      let checked = false;
+      for(i=0;i<paymentInput.length;i++){
+        if(paymentInput[i].checked){
+          checked=true;
+          break;
+        }
+      }
+      if(!checked){
+          alert("Please select your payment method");
+          return;
+      }
 
-      // let hasItem = false;
-      //   checkboxes.forEach(cb => {
-      //   if (cb.checked) hasItem = true;
-      // });
-      // if (!hasItem) {
-      //     alert("Please select at least one item");
-      //     return;
-      // }
+      let hasItem = false;
+        checkboxes.forEach(cb => {
+        if (cb.checked) hasItem = true;
+      });
+      if (!hasItem) {
+          alert("Please select at least one item");
+          return;
+      }
       successBox.classList.add("active");
       overlay.classList.add("active");
 
       form.reset();
   });
   closeButton.addEventListener("click",e =>{
-    e.preventDefault(); // chặn submit mặc định
+    e.preventDefault();
     overlay.classList.remove("active");
     successBox.classList.remove("active");
   });

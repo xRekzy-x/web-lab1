@@ -465,14 +465,14 @@ nav .nav-item .nav-link{
     position: fixed;
     background-color: var(--color--primary-1);
     inset: 20%;
-    z-index: 2000;
+    z-index: 200;
     /* display: none; */
     text-align: center;
     border-style: solid;
     border-radius: var(--border-radius--border-radius);
     border-color: var(--color--gray-2);
     border-width: 3px 8px 8px 3px;
-    opacity: 0;
+    opacity: 0; 
     transform: translateY(85vh);
     transition: all 0.4s ease;
 
@@ -713,6 +713,7 @@ nav .nav-item .nav-link{
 .info-link{
     text-decoration:underline;
     font-size: 16px;
+    color: var(--color--black);
     transition: all 0.3s ease;
 }
 .info-link:hover{
