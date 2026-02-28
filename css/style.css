@@ -26,7 +26,7 @@
 
     --color--primary-1: #e9f2ef;
     --color--primary-2: #9fd8c7;
-    --color--primary-3: #9fcfbe;
+    --color--primary-3: #7fbfad;
     --color--footer: #1e3832;
     --color--footer-text: #ffffff;
 
@@ -54,6 +54,9 @@ body {
   font-size: 20px;
   font-family: var(--font-family--body);
   transition: background-color 0.5s ease;
+}
+a{
+    color:red;
 }
 .overlay {
     position: fixed;
@@ -160,17 +163,19 @@ nav .nav-item .nav-link{
     border-width: 3px 8px 8px 3px;
     border-color: var(--color--primary-2);
     border-radius: var(--border-radius--button);
-    color: var(--color--primary-2);
+    color: var(--color--black);
     text-align: center;
     padding: 14px 30px;
     font-size: 18px;
     line-height: 1.4em;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    background-color:var(--color--primary-3);
 }
 .main-button:hover{
-    background-color: var(--color--primary-3);
-        border-color: var(--color--gray-1);
+    background-color: var(--color--primary-1);
+    border-color: var(--color--primary-3);
+    color: var(--color--primary-3);
 }
 /* INDEX */
 .running-line {
@@ -234,8 +239,7 @@ nav .nav-item .nav-link{
     height: 100px;
 }
 .card .read-more{
-    /* position: absolute;
-    bottom:-40px; */
+    color:var(--color--black);
 }
 .card-title{
     transition: all 0.3s ease;
@@ -357,6 +361,7 @@ nav .nav-item .nav-link{
     padding-bottom: 20px;
 }
 .menu .big-pic{
+    height: fit-content;
     width:50%;
     border: solid 5px var(--color--primary-1);
     border-radius: var(--border-radius--sm);
@@ -370,6 +375,7 @@ nav .nav-item .nav-link{
 .flex-wrapper{
     display:flex;
     flex:1;
+    align-items: center;
 }
 .menu li{
     width:100%;
@@ -410,13 +416,22 @@ nav .nav-item .nav-link{
     flex-wrap: wrap;
     padding: 0px 100px;
 }
+.order-title{
+    margin-bottom: 30px;
+}
+.order .qty > *{
+    color: var(--color--black);
+}
 .order input{
     width:100%;
     background-color: inherit;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: var(--border-radius--sm);
+    margin-top:5px;
 }
-.order input::placeholder{
+.order input::placeholder,
+.order input::-webkit-datetime-edit{
     color: var(--color--gray-1);
 }
 .order label{

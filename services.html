@@ -10,13 +10,14 @@
 </head>
 <body>
     <nav></nav>
-    <header class="intro">
+    <header class="intro reveal">
         <h1>Our menu</h1>
         <p>Welcome to Brew Haven! Here, we pride ourselves on offering a diverse selection of beverages and treats that cater to every taste.</p>
     </header>
    <div class="menu-container">
-    <!-- BREAKFAST SECTION -->
-    <section class="menu">
+
+    <!-- breakfast -->
+    <section class="menu reveal">
         <h2 class="title">Breakfast</h2>
         <div class="flex-wrapper">
             <img src="assets/breakfast.avif" alt="Breakfast" class="big-pic" loading="lazy">
@@ -69,7 +70,8 @@
         </div>
     </section>
 
-    <section class="menu">
+    <!-- lunch -->
+    <section class="menu reveal">
         <h2 class="title">Lunch</h2>
         <div class="flex-wrapper">
             <ul>
@@ -122,8 +124,8 @@
         </div>
     </section>
 
-    <!-- DINNER SECTION -->
-    <section class="menu">
+    <!-- dinner -->
+    <section class="menu reveal">
         <h2 class="title">Dinner</h2>
         <div class="flex-wrapper">
             <img src="assets/dinner1.avif" alt="Dinner" class="big-pic" loading="lazy">
@@ -165,8 +167,8 @@
         </div>
     </section>
 </div>
-    <form class="order">
-        <h3>Order</h3>
+    <form class="order reveal">
+        <h2 class="order-title">Order</h2>
 
         <label>
             Name:
@@ -193,13 +195,11 @@
             <input id="menuDate"type="date" name="date">
         </label><br><br>
 
-        <!-- RANGE -->
         <label>
             Spice level:
             <input type="range" name="spicy" min="0" max="10">
         </label><br><br>
 
-        <!-- RADIO -->
         <p>Payment:</p>
         <label class="option"><input class="payment" type="radio" name="payment" value="cash"> Cash</label>
         <label class="option"><input class="payment" type="radio" name="payment" value="card"> Card</label><br><br>
@@ -325,7 +325,7 @@
             </div>
         </label>
         <div class="order-button-wrapper">
-            <button class="order-button main-button"type="submit">Đặt món</button>
+            <button class="order-button main-button"type="submit">Order</button>
         </div>
 
         <div class="order-success">
