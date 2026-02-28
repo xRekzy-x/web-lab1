@@ -17,6 +17,12 @@
         max-height: 0;
         transition: all 0.3s ease;
     }
+    nav .nav-list .nav-item{
+        border-bottom: solid 1px var(--color--black);
+    }
+    nav .nav-list .nav-item .nav-link{
+
+    }
     nav .nav-list.active{
         max-height: 1000px;
         transition: all 0.3s ease;
@@ -100,6 +106,9 @@
     .menu .flex-wrapper li{
         padding-top:20px;
         margin-left:-20px;
+    }
+    .order .order-item{
+        flex: 0 0 50%;
     }
 
 }

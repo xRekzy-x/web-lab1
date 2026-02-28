@@ -19,10 +19,10 @@
     <section class="menu">
         <h2 class="title">Breakfast</h2>
         <div class="flex-wrapper">
-            <img src="assets/breakfast.avif" alt="Breakfast" class="big-pic">
+            <img src="assets/breakfast.avif" alt="Breakfast" class="big-pic" loading="lazy">
             <ul>
                 <li>
-                    <img src="assets/breakfast2.avif" alt="Espresso" class="small-pic">
+                    <img src="assets/breakfast2.avif" alt="Espresso" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Espresso</h3>
@@ -33,7 +33,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/breakfast3.avif" alt="Americano" class="small-pic">
+                    <img src="assets/breakfast3.avif" alt="Americano" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Americano</h3>
@@ -44,7 +44,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/breakfast4.avif" alt="Matcha latte" class="small-pic">
+                    <img src="assets/breakfast4.avif" alt="Matcha latte" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Matcha latte</h3>
@@ -55,7 +55,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/breakfast5.avif" alt="Latte" class="small-pic">
+                    <img src="assets/breakfast5.avif" alt="Latte" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Latte</h3>
@@ -74,7 +74,7 @@
         <div class="flex-wrapper">
             <ul>
                 <li>
-                    <img src="assets/lunch2.avif" alt="Cashew chicken" class="small-pic">
+                    <img src="assets/lunch2.avif" alt="Cashew chicken" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Cashew chicken</h3>
@@ -85,7 +85,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/lunch3.avif" alt="Shrimp curry" class="small-pic">
+                    <img src="assets/lunch3.avif" alt="Shrimp curry" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Shrimp curry</h3>
@@ -96,7 +96,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/lunch4.avif" alt="Crispy calamari rings" class="small-pic">
+                    <img src="assets/lunch4.avif" alt="Crispy calamari rings" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Crispy calamari rings</h3>
@@ -107,7 +107,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/lunch5.avif" alt="Arancini balls" class="small-pic">
+                    <img src="assets/lunch5.avif" alt="Arancini balls" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Arancini balls</h3>
@@ -118,7 +118,7 @@
                     </div>
                 </li>
             </ul>
-            <img src="assets/lunch1.avif" alt="Lunch" class="big-pic">
+            <img src="assets/lunch1.avif" alt="Lunch" class="big-pic" loading="lazy">
         </div>
     </section>
 
@@ -126,10 +126,10 @@
     <section class="menu">
         <h2 class="title">Dinner</h2>
         <div class="flex-wrapper">
-            <img src="assets/dinner1.avif" alt="Dinner" class="big-pic">
+            <img src="assets/dinner1.avif" alt="Dinner" class="big-pic" loading="lazy">
             <ul>
                 <li>
-                    <img src="assets/dinner2.avif" alt="Vegetable spring rolls" class="small-pic">
+                    <img src="assets/dinner2.avif" alt="Vegetable spring rolls" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Vegetable spring rolls</h3>
@@ -140,7 +140,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/dinner3.avif" alt="Chicken satay skewers" class="small-pic">
+                    <img src="assets/dinner3.avif" alt="Chicken satay skewers" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Chicken satay skewers</h3>
@@ -151,7 +151,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="assets/dinner4.avif" alt="Barbecue glazed ribs" class="small-pic">
+                    <img src="assets/dinner4.avif" alt="Barbecue glazed ribs" class="small-pic" loading="lazy">
                     <div class="temp-wrapper">
                         <div class="li-flex">
                             <h3 class="item-title">Barbecue glazed ribs</h3>
@@ -170,37 +170,27 @@
 
         <label>
             Name:
-            <input type="text" name="name" placeholder="Enter your name">
+            <input id="menuName" type="text" name="name" placeholder="Enter your name">
         </label><br><br>
 
-        <!-- EMAIL -->
         <label>
             Email:
-            <input type="email" name="email" placeholder="example@email.com">
+            <input id="menuEmail" type="email" name="email" placeholder="example@email.com">
         </label><br><br>
 
-        <!-- TEL -->
         <label>
-            Phonenumber:
-            <input type="tel" name="phone" placeholder="0123456789">
+            Phone number:
+            <input id="menuPhone" type="tel" name="phone" placeholder="0123456789">
         </label><br><br>
 
-        <!-- PASSWORD -->
-        <label>
-            Password:
-            <input type="password" name="password">
-        </label><br><br>
-
-        <!-- NUMBER -->
         <label>
             Number of guests:
-            <input type="number" name="people" min="1" max="10">
+            <input id="noOfGuests"type="number" name="people" min="1" max="10">
         </label><br><br>
 
-        <!-- DATE -->
         <label>
             Date:
-            <input type="date" name="date">
+            <input id="menuDate"type="date" name="date">
         </label><br><br>
 
         <!-- RANGE -->
@@ -211,8 +201,8 @@
 
         <!-- RADIO -->
         <p>Payment:</p>
-        <label class="option"><input type="radio" name="payment" value="cash"> Cash</label>
-        <label class="option"><input type="radio" name="payment" value="card"> Card</label><br><br>
+        <label class="option"><input class="payment" type="radio" name="payment" value="cash"> Cash</label>
+        <label class="option"><input class="payment" type="radio" name="payment" value="card"> Card</label><br><br>
 
         <label class="order-item">
             <input class="checkbox" type="checkbox">
@@ -334,7 +324,18 @@
                 <button type="button" class="plus">+</button>
             </div>
         </label>
-        <button class="main-button"type="submit">Đặt món</button>
+        <div class="order-button-wrapper">
+            <button class="order-button main-button"type="submit">Đặt món</button>
+        </div>
+
+        <div class="order-success">
+            <div class="text-wrapper">
+                <h2 class="success-title">Order Successful <i class="fa-solid fa-circle-check"></i></h2>
+                <p class="success-title">Thank you! Your order has been placed successfully.</p>
+            </div>
+            <button class="close-button">X</button>
+        </div>
+        <div class="overlay"></div>
     </form>
     <footer></footer>
     <script src="js/main.js"></script>
