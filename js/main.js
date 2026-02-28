@@ -1,4 +1,4 @@
-fetch("nav/nav.html")
+fetch("supported_html/nav.html")
   .then(res => res.text())
   .then(html => {
     document.querySelector("nav").innerHTML = html;
@@ -67,9 +67,8 @@ if (savedTheme) {
         count.textContent=hiddenCount;
     }
   })
-
 //   FOOTER
-fetch("footer/footer.html")
+fetch("supported_html/footer.html")
   .then(res => res.text())
   .then(html => {
     document.querySelector("footer").innerHTML = html;
