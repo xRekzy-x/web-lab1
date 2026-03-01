@@ -69,3 +69,6 @@ Responsive media queries
 JavaScript (Vanilla)
 Google Fonts
 Font Awesome Icons
+
+GitHub Repository:  https://github.com/xRekzy-x/web-lab1
+Deployed Website (GitHub Pages): https://xrekzy-x.github.io/web-lab1/
