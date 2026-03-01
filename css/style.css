@@ -917,7 +917,6 @@ footer .information .information-detail{
 }
 footer .information .main-button{
     margin-top:20px;
-    background-color: var(--color--primary-3);
 }
 .footer-contact .contact-title{
     color:var(--color--footer-text);
