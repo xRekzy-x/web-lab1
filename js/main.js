@@ -10,6 +10,8 @@ fetch("supported_html/nav.html")
     navBtn.addEventListener("click", () => {
       navUL.classList.toggle("active");
       overlay.classList.toggle('active');
+      if (navUL.classList.contains("active")) navBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+      else navBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
     });
     overlay.addEventListener("click",() =>{
       navUL.classList.remove("active");
@@ -112,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.querySelector(".overlay");
 
   submitButton.addEventListener("click", function (e) {
-      e.preventDefault(); // chặn submit mặc định
+      e.preventDefault();
 
       const nameValue = nameInput.value.trim();
       const emailValue = emailInput.value.trim();
@@ -120,17 +122,33 @@ document.addEventListener("DOMContentLoaded", function () {
       const noOfGuestsValue = noOfGuestsInput.value.trim();
       const dateValue = dateInput.value;
 
+      const nameRegex = /^[A-Za-zÀ-ỹ\s]{2,}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^[0-9]{9,11}$/;
+
       if (nameValue === "") {
           alert("Please enter your name");
           return;
+      }
+      if (!nameRegex.test(nameValue)) {
+        alert("Name must contain only letters and spaces");
+        return;
       }
       if (emailValue === "") {
           alert("Please enter your email");
           return;
       }
+      if (!emailRegex.test(emailValue)) {
+        alert("Invalid email format");
+        return;
+      }
       if (phoneValue === "") {
           alert("Please enter your phone");
           return;
+      }
+      if (!phoneRegex.test(phoneValue)) {
+        alert("Phone number must be 9–11 digits");
+        return;
       }
       if (noOfGuestsValue === "") {
           alert("Please choose how many people!");
